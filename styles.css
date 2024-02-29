@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(180deg, #ffe6cd 0%, #ffb25a 100%);
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.container {
+    background-color: white;
+    width:500px;
+    margin: 50px auto;
+    padding: 20px 10px;
+    border-radius: 50px;
+}
+
+.inner-wrapper {
+    display: inline-block;
+}
+
+/* 計時器 */
+.focus-timer, .done-list  {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.timer{
+    font-size: 100px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+/* 項目輸入與按鈕 */
+.input-wrapper {
+  border-radius: 20px;
+  background: #EEEFF0;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 35px;
+  margin-right: 40px;
+}
+
+.input-wrapper input {
+  background-color: transparent;
+  border: 0px;
+  outline: none;
+  margin-left: 20px;
+}
+
+.input-wrapper button {
+  background-color: #f8733e;
+  border: 0px;
+  color: white;
+  font-family: "Anta", sans-serif;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 200;
+}
+
+/* table */
+th{
+  
+  background-color:#ffbe96;
+  color:#ffffff;
+  height:40px;
+}
+
+td{
+  width:150px;
+  background-color:#ffffff;
+  height:50px;
+  text-align:center;
+}
+
+
+tr:nth-of-type(even) td{
+  background-color:#f3f3f3;
+}
+
+td:last-child{
+    width:60px;
+}
+
+/* 刪除按鈕 */
+button{
+  width: 45px;
+  height: 30px;
+  background-color: #f8733e;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  letter-spacing:1px;
+}
+
+button:hover {
+    background-color: #f9a154;
+    color: #ffffff;
+  }
+
+button:active {
+    background-color: #ffa954;
+}
+
+table{
+  border-collapse:collapse;
+  overflow:hidden;
+  border-radius:5px 10px 0px 0px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 35px;
+}

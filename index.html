@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-wrapper">
+        <h3 class="focus-timer">Focus Timer</h3>
+          <p class="timer"><span id="seconds">00</span>:<span id="m_seconds">00</span></p>
+          <div>
+            <form class="input-wrapper">
+              <input type="text" id="input" placeholder="輸入專注項目"/>
+              <button id="start-button">Start</button>
+          </div>
+          <br>
+      </div>
+    </div>
+    <div class="container">
+      <div class="inner-wrapper">
+        <h3 class="done-list">Done List</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>時間</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>寫程式</td>
+              <td>50分鐘</td>
+              <td><button type="button">刪除</button></td>
+            </tr>
+            <tr>
+              <td>練習英文口說</td>
+              <td>30分鐘</td>
+              <td><button type="button">刪除</button></td>
+            </tr>
+            <tr>
+              <td>運動</td>
+              <td>20分鐘</td>
+              <td><button type="button">刪除</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </teble>
+    </div>
+      </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
