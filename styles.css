@@ -31,30 +31,46 @@ body {
 }
 
 /* 項目輸入與按鈕 */
-.input-wrapper {
+.input-focus-item{
   border-radius: 20px;
   background: #EEEFF0;
   display: flex;
   justify-content: space-between;
   margin-left: 35px;
   margin-right: 40px;
+  margin-top: 55px;
+  height: 35px;
 }
 
-.input-wrapper input {
+.input-focus-item input {
   background-color: transparent;
   border: 0px;
   outline: none;
   margin-left: 20px;
 }
 
-.input-wrapper button {
+#button-start {
   background-color: #f8733e;
   border: 0px;
   color: white;
   font-family: "Anta", sans-serif;
   border-radius: 20px;
   cursor: pointer;
-  font-weight: 200;
+  font-weight: 300;
+  height: 35px;
+  width: 50px;
+}
+
+#botton-stop {
+  background-color: #f8733e;
+  border: 0px;
+  color: white;
+  font-family: "Anta", sans-serif;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 300;
+  height: 35px;
+  width: 300px;
 }
 
 /* table */
@@ -63,10 +79,11 @@ th{
   background-color:#ffbe96;
   color:#ffffff;
   height:40px;
+  width:130px;
+  text-align:center;
 }
 
 td{
-  width:150px;
   background-color:#ffffff;
   height:50px;
   text-align:center;
@@ -77,8 +94,8 @@ tr:nth-of-type(even) td{
   background-color:#f3f3f3;
 }
 
-td:last-child{
-    width:60px;
+th:last-child {
+    width:70px;
 }
 
 /* 刪除按鈕 */
@@ -94,12 +111,14 @@ button{
   letter-spacing:1px;
 }
 
-button:hover {
-    background-color: #f9a154;
+
+/* 按鈕動態 */
+button:hover,#button-start:hover ,#button-stop:hover {
+    background-color: #ff9d48;
     color: #ffffff;
   }
 
-button:active {
+button:active,#button-start:hover ,#button-stop:hover {
     background-color: #ffa954;
 }
 

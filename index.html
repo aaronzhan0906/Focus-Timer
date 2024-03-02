@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />\
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus Timer</title>
     <link rel="stylesheet" href="styles.css" />
@@ -16,47 +16,36 @@
     <div class="container">
       <div class="inner-wrapper">
         <h3 class="focus-timer">Focus Timer</h3>
-          <p class="timer"><span id="seconds">00</span>:<span id="m_seconds">00</span></p>
-          <div>
-            <form class="input-wrapper">
-              <input type="text" id="input" placeholder="輸入專注項目"/>
-              <button id="start-button">Start</button>
+          <p class="timer"><span id="minutes">00</span>:<span id="seconds">00</span></p>
+          <div class="input-focus-item">
+            <input type="text" id="input" placeholder="輸入專注項目">
+            <button id="button-start">Start</button>
           </div>
-          <br>
-      </div>
+      </div> 
+      <button id="button-stop">Focus Stop</button>
     </div>
     <div class="container">
       <div class="inner-wrapper">
         <h3 class="done-list">Done List</h3>
-        <table>
+        <table id="table-done-list">
           <thead>
             <tr>
               <th>項目</th>
               <th>時間</th>
-              <th></th>
+              <th>刪除鍵</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>寫程式</td>
-              <td>50分鐘</td>
-              <td><button type="button">刪除</button></td>
-            </tr>
-            <tr>
-              <td>練習英文口說</td>
-              <td>45分鐘</td>
-              <td><button type="button">刪除</button></td>
-            </tr>
-            <tr>
-              <td>運動</td>
-              <td>20分鐘</td>
-              <td><button type="button">刪除</button></td>
+            <tr id="initial-span">
+              <td>示意</td>
+              <td>25:00</td>
+              <td><button type="button" class="deletebutton">刪除</button></td>
             </tr>
           </tbody>
         </table>
       </teble>
     </div>
       </div>
-    <script src="script.js" defer></script>
+    <script src="./script.js" defer></script>
   </body>
 </html>
