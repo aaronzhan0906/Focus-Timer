@@ -31,7 +31,7 @@ body {
 }
 
 /* 項目輸入與按鈕 */
-.input-focus-item{
+#input-focus-item{
   border-radius: 20px;
   background: #EEEFF0;
   display: flex;
@@ -42,7 +42,7 @@ body {
   height: 35px;
 }
 
-.input-focus-item input {
+#input-focus-item input {
   background-color: transparent;
   border: 0px;
   outline: none;
@@ -56,24 +56,33 @@ body {
   font-family: "Anta", sans-serif;
   border-radius: 20px;
   cursor: pointer;
-  font-weight: 300;
   height: 35px;
   width: 50px;
+  letter-spacing: 0.5px;
 }
 
-#botton-stop {
+#button-stop {
+  
+  height:35px;
+  width: 212px;
+  border-radius: 20px;
+  margin-right: 3px;
   background-color: #f8733e;
   border: 0px;
   color: white;
-  font-family: "Anta", sans-serif;
-  border-radius: 20px;
   cursor: pointer;
-  font-weight: 300;
-  height: 35px;
-  width: 300px;
+  letter-spacing: 0.5px;
 }
 
 /* table */
+table{
+  border-collapse:collapse;
+  overflow:hidden;
+  border-radius:5px 10px 0px 0px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 35px;
+}
+
 th{
   
   background-color:#ffbe96;
@@ -99,7 +108,7 @@ th:last-child {
 }
 
 /* 刪除按鈕 */
-button{
+.deletebutton{
   width: 45px;
   height: 30px;
   background-color: #f8733e;
@@ -114,18 +123,13 @@ button{
 
 /* 按鈕動態 */
 button:hover,#button-start:hover ,#button-stop:hover {
-    background-color: #ff9d48;
+    background-color: #ff9029;
     color: #ffffff;
-  }
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
 
 button:active,#button-start:hover ,#button-stop:hover {
-    background-color: #ffa954;
+    background-color: #ff9029;
 }
 
-table{
-  border-collapse:collapse;
-  overflow:hidden;
-  border-radius:5px 10px 0px 0px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  margin-bottom: 35px;
-}

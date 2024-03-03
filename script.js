@@ -6,6 +6,8 @@ const displaySeconds = document.getElementById("seconds");
 const buttonStart = document.getElementById("button-start");
 const buttonStop = document.getElementById("button-stop");
 const table = document.getElementById("table-done-list");
+const inputText = document.getElementById("input-focus-item");
+
 let interval; //store variable of timer
 
 //以下是localstorage
@@ -39,7 +41,7 @@ const timer = () => {
 };
 //以上是計時器
 
-//以下是專注項目
+//以下是 Focus Start 和 Focus Stop 的功能
 //輸入專注項目，並按下 Focus Start 時，將專注項目加入tableState
 buttonStart.addEventListener("click", startFocusTimer);
 function startFocusTimer() {
@@ -58,6 +60,11 @@ function startFocusTimer() {
 
   //將專注項目加入tableState
   tableState.unshift(text);
+
+  //隱藏輸入框、隱藏 Focus Start、顯示 Focus Stop 按鈕
+  buttonStart.style.display = "none"; // 隱藏 Start 按鈕
+  buttonStop.style.display = "inline-block"; // 顯示 Focus Stop 按鈕
+  inputText.style.display = "none"; // 隱藏 input-focus-item
 }
 
 //按下 Focus Stop 時，將專注項目、時間、刪除按鈕加入 Done List
@@ -75,7 +82,7 @@ function stopFocusTimer() {
   displaySeconds.innerHTML = `00`;
   displayMinutes.innerHTML = `00`;
 
-  //移除 initial-scale
+  //移除 id initial-scale 的 tr 範例
   const initialSpan = document.getElementById("initial-span");
   if (initialSpan) {
     initialSpan.remove();
@@ -101,9 +108,14 @@ function stopFocusTimer() {
 
   // 將新的 table row 添加到 table 中
   table.appendChild(tr);
+
+  // 顯示 Focus Start 按鈕、隱藏 Focus Stop 按鈕、顯示 input-focus-item
+  buttonStop.style.display = "none"; // 隱藏 Focus Stop 按鈕
+  buttonStart.style.display = "inline-block"; // 顯示 Start 按鈕
+  inputText.style.display = "block"; // 顯示 input-focus-item
 }
 
-//Done List 的刪除按鈕效果
+// Done List 的刪除按鈕效果
 table.addEventListener("click", function (event) {
   console.log("deletetest");
   if (event.target.classList.contains("deletebutton")) {
