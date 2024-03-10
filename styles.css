@@ -9,7 +9,7 @@ body {
 .container {
     background-color: white;
     width:500px;
-    margin: 50px auto;
+    margin: 3.2rem auto;
     padding: 20px 10px;
     border-radius: 50px;
 }
@@ -26,8 +26,8 @@ body {
 
 .timer{
     font-size: 100px;
-    margin-top: 55px;
-    margin-bottom: 55px;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
 }
 
 /* 項目輸入與按鈕 */
@@ -36,10 +36,11 @@ body {
   background: #EEEFF0;
   display: flex;
   justify-content: space-between;
-  margin-left: 35px;
-  margin-right: 40px;
-  margin-top: 55px;
-  height: 35px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  height: 2.2rem;
 }
 
 #input-focus-item input {
@@ -56,17 +57,17 @@ body {
   font-family: "Anta", sans-serif;
   border-radius: 20px;
   cursor: pointer;
-  height: 35px;
-  width: 50px;
+  height: 2.2rem;
+  width: 3.2rem;
   letter-spacing: 0.5px;
 }
 
 #button-stop {
   
-  height:35px;
-  width: 212px;
+  height:2.2rem;
+  width:13.5rem;
   border-radius: 20px;
-  margin-right: 3px;
+  margin-bottom: 2rem;
   background-color: #f8733e;
   border: 0px;
   color: white;
@@ -80,21 +81,21 @@ table{
   overflow:hidden;
   border-radius:5px 10px 0px 0px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  margin-bottom: 35px;
+  margin-bottom: 2.4rem;
 }
 
 th{
   
   background-color:#ffbe96;
   color:#ffffff;
-  height:40px;
-  width:130px;
+  height:2.5rem;
+  width:8rem;
   text-align:center;
 }
 
 td{
   background-color:#ffffff;
-  height:50px;
+  height:3.2rem;
   text-align:center;
 }
 
@@ -104,13 +105,13 @@ tr:nth-of-type(even) td{
 }
 
 th:last-child {
-    width:70px;
+    width:6rem;
 }
 
 /* 刪除按鈕 */
 .deletebutton{
-  width: 45px;
-  height: 30px;
+  width: 3rem;
+  height: 2rem;
   background-color: #f8733e;
   color: #fff;
   border: 1px solid #fff;

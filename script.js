@@ -1,4 +1,4 @@
-//以下是初始設定
+// 以下是初始設定
 let minutes = 0;
 let seconds = 0;
 const displayMinutes = document.getElementById("minutes");
@@ -26,7 +26,7 @@ function removeInitialSpan() {
   }
 }
 
-//以下是localstorage
+// 以下是 localstorage
 let tableState = [];
 
 const STATE_KEY = "tableState";
@@ -67,7 +67,7 @@ function saveState() {
   localStorage.setItem(STATE_KEY, JSON.stringify(tableState));
 }
 
-//以下是 timer display
+// 以下是 timer display
 const timer = () => {
   seconds++;
 
@@ -92,8 +92,8 @@ const timer = () => {
   }
 };
 
-//以下是 Focus Start 和 Focus Stop 功能
-//輸入專注項目，並在按下 Focus Start 時，將專注項目加入 itemState
+// 以下是 Focus Start 和 Focus Stop 功能
+// 輸入專注項目，並在按下 Focus Start 時，將專注項目加入 itemState
 buttonStart.addEventListener("click", startFocusTimer);
 function startFocusTimer() {
   const input = document.getElementById("input");
