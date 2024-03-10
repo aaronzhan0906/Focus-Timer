@@ -1,4 +1,4 @@
-<a href="https://aaronzhan0906.github.io/Focus-Timer/" target="_blank">網站連結</a>
+<a href="https://aaronzhan0906.github.io/Focus-Timer/" target="_blank">Focus Timer 連結</a>
 
 <li>在刷新頁面時，如果沒有專注項目的紀錄，Done List 的表格會有示意列</li>
 <br>
