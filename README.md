@@ -5,7 +5,7 @@
 <img width="500" alt="截圖 2024-03-10 晚上7 42 34" src="https://github.com/aaronzhan0906/Focus-Timer/assets/156295425/249c4399-3873-4f09-9d17-ddcf3e99b104"><br>
 
 
-<br><li>沒有輸入專注項目就按下 Start 會跳出「請輸入專注項目</li>
+<br><li>沒有輸入專注項目就按下 Start 會跳出「請輸入專注項目」</li>
 <br>
 <img width="500" alt="截圖 2024-03-10 晚上7 45 42" src="https://github.com/aaronzhan0906/Focus-Timer/assets/156295425/14a69bd9-bb6b-442a-a588-ab7e2503029d"><br>
 
